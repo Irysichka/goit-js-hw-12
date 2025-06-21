@@ -33,13 +33,116 @@ main:has(.back-link) {
 
 
 .gallery{
-
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+row-gap: 24px;
+column-gap: 24px;
+margin-top: 32px;
 }
-.gallery-item{
 
+/* .gallery-item{
+width: 360px;
+height: 200px;
 }
 
 .info{
 display: flex;
 flex-direction: row;
+width: 360px;
+height: 48px;
+} */
+
+
+.button-sub {
+  border-radius: 8px;
+  width: 91px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+
+
+.loader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0 auto;
+}
+.hidden{
+  display: none;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  color: #0000;
+  background: linear-gradient(90deg, #000 calc(50% - 0.5ch), #C02942 0 calc(50% + 0.5ch), #000 0) right/calc(200% + 1ch) 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: l8 2s infinite steps(11);
+}
+
+.loader:before {
+  content: "Loading..."
+}
+
+@keyframes l8 {
+  to {
+    background-position: left
+  }
+}
+
+
+.form {
+  margin: 0 auto;
+  padding: 30px;
+
+}
+
+input {
+  width: 264px;
+  height: 34px;
+  border-radius: 4px;
+}
+
+:placeholder-shown {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+
+.load-more{
+font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+    width: 125px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.load-more-hidden{
+  display: none;
 }
